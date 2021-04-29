@@ -71,9 +71,9 @@ public class SwaggerUiWebMvcConfigurer implements WebMvcConfigurer {
 		registry.addMapping("/v2/api-docs.*").allowedOrigins("http://editor.swagger.io");
 		registry.addMapping("/api/higherAuthority/standardSubjects").allowedOrigins("*");
 
-		registry.addMapping("/api/students").allowedOrigins("http://editor.swagger.io");
-		registry.addMapping("/v2/api-docs.*").allowedOrigins("http://editor.swagger.io");
-		registry.addMapping("/api/students").allowedOrigins("*");
+// 		registry.addMapping("/api/students").allowedOrigins("http://editor.swagger.io");
+// 		registry.addMapping("/v2/api-docs.*").allowedOrigins("http://editor.swagger.io");
+// 		registry.addMapping("/api/students").allowedOrigins("*");
 
 		registry.addMapping("/api/higherAuthority/subject").allowedOrigins("http://editor.swagger.io");
 	    registry .addMapping("/v2/api-docs.*").allowedOrigins("http://editor.swagger.io");
