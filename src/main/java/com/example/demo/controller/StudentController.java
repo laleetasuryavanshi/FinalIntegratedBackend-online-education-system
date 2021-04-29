@@ -197,6 +197,12 @@ public class StudentController {
 	public List<StudentRegistration> getAllStudentFromStd(@PathVariable Long std) {
 		return srepo.findByStd(std);
 	}
+	
+	
+	@GetMapping("/tt")
+	public String jentt() {
+		return "welcome to";
+	}
 
 }// package com.example.demo.controller;
 //
