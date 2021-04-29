@@ -6,6 +6,8 @@ import java.util.function.Predicate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 import springfox.documentation.oas.annotations.EnableOpenApi;
@@ -14,8 +16,14 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 @EnableOpenApi
 @SpringBootApplication
-public class OnlineEducationSystemMineApplication {
+public class OnlineEducationSystemMineApplication extends SpringBootServletInitializer{
 
+	
+	@Override
+	  protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+	      return builder.sources(OnlineEducationSystemMineApplication.class);
+	  }
+	
 	public static void main(String[] args) {
 		SpringApplication.run(OnlineEducationSystemMineApplication.class, args);
 	}
@@ -38,3 +46,4 @@ public class OnlineEducationSystemMineApplication {
       return regex(".*/api/.*");
     }
 }
+
