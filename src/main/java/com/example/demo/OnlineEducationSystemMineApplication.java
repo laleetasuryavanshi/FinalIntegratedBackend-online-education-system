@@ -1,3 +1,4 @@
+
 package com.example.demo;
 
 import static springfox.documentation.builders.PathSelectors.regex;
@@ -46,4 +47,13 @@ public class OnlineEducationSystemMineApplication extends SpringBootServletIniti
       return regex(".*/api/.*");
     }
 }
+
+
+
+
+
+
+
+
+
 
